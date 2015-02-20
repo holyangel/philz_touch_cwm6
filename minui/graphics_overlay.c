@@ -97,10 +97,10 @@ bool target_has_overlay(char *version)
             str_ver[3] = '\0';
             mdp_version = atoi(str_ver);
             if (mdp_version >= MDP_V4_0) {
-                overlay_supported = true;
+                overlay_supported = false;
             }
         } else if (!strncmp(version, "mdssfb", strlen("mdssfb"))) {
-            overlay_supported = true;
+            overlay_supported = false;
             isMDP5 = true;
         }
     }
