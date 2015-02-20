@@ -809,6 +809,14 @@ else ifeq ($(TARGET_DEVICE), d855)
     TARGET_SCREEN_WIDTH := 1440
     BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
 
+#LG G3 Verizon (vs985)
+else ifeq ($(TARGET_DEVICE), vs985)
+    TARGET_COMMON_NAME := LG G3 ($(TARGET_DEVICE))
+    KERNEL_EXFAT_MODULE_NAME := "exfat"
+    TARGET_SCREEN_HEIGHT := 2560
+    TARGET_SCREEN_WIDTH := 1440
+    BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
+
 #LG G Pad 8.3 (v500)
 else ifeq ($(TARGET_DEVICE), v500)
     TARGET_COMMON_NAME := LG G Pad 8.3
