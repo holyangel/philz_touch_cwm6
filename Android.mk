@@ -71,7 +71,7 @@ endif
 # This should be the same line as upstream to not break makerecoveries.sh
 RECOVERY_VERSION := $(RECOVERY_NAME) v6.0.5.1
 
-PHILZ_BUILD := 6.59.0
+PHILZ_BUILD := 6.59.1
 CWM_BASE_VERSION := $(shell echo $(RECOVERY_VERSION) | cut -d ' ' -f 3)
 LOCAL_CFLAGS += -DCWM_BASE_VERSION="$(CWM_BASE_VERSION)"
 
@@ -81,7 +81,7 @@ LOCAL_CFLAGS += -DRECOVERY_API_VERSION=$(RECOVERY_API_VERSION)
 
 ifdef PHILZ_TOUCH_RECOVERY
     LOCAL_CFLAGS += -DPHILZ_TOUCH_RECOVERY
-    RECOVERY_MOD_NAME := PhilZ Touch
+    RECOVERY_MOD_NAME := PhilZ Touch - SkyDragon Edition
 else
     ifndef RECOVERY_MOD_NAME
     RECOVERY_MOD_NAME := CWM Advanced Edition
