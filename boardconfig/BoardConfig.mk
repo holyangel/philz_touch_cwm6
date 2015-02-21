@@ -725,7 +725,7 @@ else ifeq ($(TARGET_DEVICE), vigor)
 else ifneq ($(filter $(TARGET_DEVICE),m8 m8spr m8vzw m8att),)
     TARGET_COMMON_NAME := HTC One M8 ($(TARGET_DEVICE))
     KERNEL_EXFAT_MODULE_NAME := "exfat"
-    TARGET_USERIMAGES_USE_F2FS := false
+    TARGET_USERIMAGES_USE_F2FS := true
     TARGET_SCREEN_HEIGHT := 1920
     TARGET_SCREEN_WIDTH := 1080
     BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
